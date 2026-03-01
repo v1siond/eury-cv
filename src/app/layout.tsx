@@ -31,10 +31,6 @@ export default function RootLayout({
 
   return (
     <html lang="es">
-      <head>
-        {/* Netlify Identity Widget — required for /admin/ OAuth redirect */}
-        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" async />
-      </head>
       <body
         className={`${inter.variable} ${lora.variable} font-sans antialiased bg-bg text-dark`}
       >
@@ -44,7 +40,15 @@ export default function RootLayout({
         />
         {children}
         <Footer siteConfig={siteConfig} />
-        {/* Redirect to /admin/ after Netlify Identity login */}
+        {/*
+          Netlify Identity Widget — must load with beforeInteractive so it
+          catches #confirmation_token / #recovery_token / #invite_token hashes
+          before the page finishes hydrating.
+        */}
+        <Script
+          src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+          strategy="beforeInteractive"
+        />
         <Script id="netlify-identity-redirect" strategy="afterInteractive">{`
           if (window.netlifyIdentity) {
             window.netlifyIdentity.on("init", function(user) {

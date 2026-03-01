@@ -2,8 +2,7 @@ backend:
   name: git-gateway
   branch: main
 
-# Uncomment the line below for local development (run `npx decap-server` first)
-# local_backend: true
+# local_backend: true  ← uncomment this when developing locally (run `npx decap-server` in a second terminal)
 
 media_folder: "public/uploads"
 public_folder: "/uploads"

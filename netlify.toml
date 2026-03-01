@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "sed -i \"s/branch: main/branch: $BRANCH/\" public/admin/config.yml && npm run build"
   publish = "out"
 
 [build.environment]

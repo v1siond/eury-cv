@@ -1,0 +1,273 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Uncomment the line below for local development (run `npx decap-server` first)
+# local_backend: true
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+# ─── Collections ──────────────────────────────────────────────────────────────
+
+collections:
+
+  # ── Global site settings ──────────────────────────────────────────────────
+  - name: "settings"
+    label: "⚙️ Configuración del sitio"
+    files:
+      - name: "site_config"
+        label: "Configuración global"
+        file: "content/site-config.json"
+        format: "json"
+        fields:
+          - label: "Nombre profesional"
+            name: "professional_name"
+            widget: "string"
+            hint: "Aparece en la barra de navegación y el pie de página"
+          - label: "Título profesional"
+            name: "professional_title"
+            widget: "string"
+            hint: "Ej: Especialista en Integración Neuro-Motora"
+          - label: "Número de WhatsApp"
+            name: "whatsapp_number"
+            widget: "string"
+            hint: "Solo el número, sin '+' ni espacios. Ej: 34612345678"
+
+  # ── Home page sections ────────────────────────────────────────────────────
+  - name: "home"
+    label: "🏠 Página principal"
+    files:
+
+      # Hero
+      - name: "hero"
+        label: "Hero (sección principal)"
+        file: "content/home/hero.json"
+        format: "json"
+        fields:
+          - label: "Pills / Badges"
+            name: "badges"
+            widget: "list"
+            hint: "Las pequeñas etiquetas bajo el titular (ej: 100% Online)"
+            field:
+              label: "Badge"
+              name: "badge"
+              widget: "string"
+          - label: "Titular — parte 1"
+            name: "headline_part1"
+            widget: "string"
+            hint: "Texto antes de la palabra destacada"
+          - label: "Titular — palabra destacada"
+            name: "headline_highlight"
+            widget: "string"
+            hint: "Se muestra en color verde primario"
+          - label: "Titular — parte 2"
+            name: "headline_part2"
+            widget: "string"
+            hint: "Texto después de la palabra destacada"
+          - label: "Subtítulo"
+            name: "subheadline"
+            widget: "string"
+          - label: "Texto del cuerpo"
+            name: "body"
+            widget: "text"
+          - label: "Texto del botón WhatsApp"
+            name: "cta_text"
+            widget: "string"
+          - label: "Número de WhatsApp (botón hero)"
+            name: "whatsapp_number"
+            widget: "string"
+          - label: "Foto de perfil"
+            name: "image"
+            widget: "image"
+            required: false
+            hint: "Sube una foto profesional. Si está vacío se muestra el círculo decorativo."
+          - label: "Nombre en el círculo decorativo"
+            name: "profile_name"
+            widget: "string"
+            hint: "Solo visible cuando no hay foto"
+          - label: "Subtítulo en el círculo decorativo"
+            name: "profile_subtitle"
+            widget: "string"
+            hint: "Solo visible cuando no hay foto"
+          - label: "Tags en el círculo decorativo"
+            name: "profile_tags"
+            widget: "list"
+            hint: "Solo visibles cuando no hay foto"
+            field:
+              label: "Tag"
+              name: "tag"
+              widget: "string"
+
+      # ¿Para quién es?
+      - name: "for_who"
+        label: "¿Para quién es?"
+        file: "content/home/for-who.json"
+        format: "json"
+        fields:
+          - label: "Etiqueta de sección"
+            name: "section_tag"
+            widget: "string"
+            hint: "Texto pequeño sobre el título (ej: ¿Para quién es?)"
+          - label: "Título"
+            name: "title"
+            widget: "string"
+          - label: "Subtítulo"
+            name: "subtitle"
+            widget: "text"
+          - label: "Columna — Niños"
+            name: "ninos"
+            widget: "object"
+            fields:
+              - { label: "Título tarjeta", name: "title", widget: "string" }
+              - { label: "Rango de edad", name: "age_range", widget: "string" }
+              - { label: "Párrafo introductorio", name: "intro", widget: "text" }
+              - label: "Ítems de la lista"
+                name: "items"
+                widget: "list"
+                field: { label: "Ítem", name: "item", widget: "string" }
+          - label: "Columna — Adultos"
+            name: "adultos"
+            widget: "object"
+            fields:
+              - { label: "Título tarjeta", name: "title", widget: "string" }
+              - { label: "Rango de edad", name: "age_range", widget: "string" }
+              - { label: "Párrafo introductorio", name: "intro", widget: "text" }
+              - label: "Ítems de la lista"
+                name: "items"
+                widget: "list"
+                field: { label: "Ítem", name: "item", widget: "string" }
+              - label: "Nota informativa (caja amarilla)"
+                name: "note"
+                widget: "text"
+                required: false
+
+      # Cómo funciona
+      - name: "how_it_works"
+        label: "Cómo funciona"
+        file: "content/home/how-it-works.json"
+        format: "json"
+        fields:
+          - { label: "Etiqueta de sección", name: "section_tag", widget: "string" }
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Subtítulo", name: "subtitle", widget: "text" }
+          - label: "Pasos del proceso"
+            name: "steps"
+            widget: "list"
+            hint: "Los 4 pasos (Evaluación → Plan → Seguimiento → Reevaluación)"
+            fields:
+              - { label: "Número", name: "number", widget: "string", hint: "Ej: 01" }
+              - { label: "Título del paso", name: "title", widget: "string" }
+              - { label: "Descripción", name: "description", widget: "text" }
+
+      # Planes
+      - name: "plans"
+        label: "Planes"
+        file: "content/home/plans.json"
+        format: "json"
+        fields:
+          - { label: "Etiqueta de sección", name: "section_tag", widget: "string" }
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Subtítulo", name: "subtitle", widget: "text" }
+          - label: "Planes"
+            name: "plans"
+            widget: "list"
+            fields:
+              - { label: "Nombre del plan", name: "name", widget: "string" }
+              - { label: "Tagline", name: "tagline", widget: "string" }
+              - { label: "Descripción", name: "description", widget: "text" }
+              - label: "Características (lista)"
+                name: "features"
+                widget: "list"
+                field: { label: "Característica", name: "feature", widget: "string" }
+              - label: "¿Plan destacado? (fondo verde)"
+                name: "highlighted"
+                widget: "boolean"
+                default: false
+              - label: "Badge / Etiqueta"
+                name: "badge"
+                widget: "string"
+                required: false
+                hint: "Ej: ⭐ Más completo  (deja vacío si no hay badge)"
+              - { label: "Número WhatsApp", name: "whatsapp_number", widget: "string" }
+              - { label: "Texto del botón", name: "cta_text", widget: "string" }
+
+      # Contacto WhatsApp
+      - name: "whatsapp_contact"
+        label: "Contacto WhatsApp"
+        file: "content/home/whatsapp-contact.json"
+        format: "json"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Cuerpo de texto", name: "body", widget: "text" }
+          - { label: "Texto del botón", name: "cta_text", widget: "string" }
+          - { label: "Número de WhatsApp", name: "whatsapp_number", widget: "string" }
+          - { label: "Nota de tiempo de respuesta", name: "response_time", widget: "string" }
+
+      # Preguntas frecuentes
+      - name: "faq"
+        label: "Preguntas frecuentes"
+        file: "content/home/faq.json"
+        format: "json"
+        fields:
+          - { label: "Etiqueta de sección", name: "section_tag", widget: "string" }
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Subtítulo", name: "subtitle", widget: "text" }
+          - label: "Preguntas y respuestas"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Pregunta", name: "question", widget: "string" }
+              - { label: "Respuesta", name: "answer", widget: "text" }
+
+      # Política
+      - name: "policy"
+        label: "Privacidad y consentimiento"
+        file: "content/home/policy.json"
+        format: "json"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Subtítulo", name: "subtitle", widget: "text" }
+          - label: "Bloques de política"
+            name: "policies"
+            widget: "list"
+            fields:
+              - { label: "Emoji / Icono", name: "icon", widget: "string", hint: "Ej: 🔒" }
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Texto", name: "body", widget: "text" }
+
+  # ── Blog ──────────────────────────────────────────────────────────────────
+  - name: "blog"
+    label: "✍️ Blog"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - label: "Título"
+        name: "title"
+        widget: "string"
+      - label: "Fecha de publicación"
+        name: "date"
+        widget: "datetime"
+        date_format: "YYYY-MM-DD"
+        time_format: false
+        format: "YYYY-MM-DD"
+      - label: "Extracto"
+        name: "excerpt"
+        widget: "text"
+        hint: "Resumen breve que aparece en la lista del blog"
+      - label: "Color de portada"
+        name: "coverColor"
+        widget: "string"
+        default: "#e8f0ee"
+        hint: "Color hexadecimal para el bloque de portada (ej: #e8f0ee)"
+      - label: "Tiempo de lectura"
+        name: "readingTime"
+        widget: "string"
+        default: "5 min"
+        hint: "Ej: 5 min"
+      - label: "Contenido"
+        name: "body"
+        widget: "markdown"

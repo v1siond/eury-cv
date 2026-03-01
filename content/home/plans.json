@@ -1,0 +1,72 @@
+{
+  "section_tag": "Planes",
+  "title": "Encuentra tu plan",
+  "subtitle": "Todos los planes incluyen evaluación inicial y programa personalizado. Consulta precios directamente por WhatsApp.",
+  "plans": [
+    {
+      "name": "Premium",
+      "tagline": "Máximo acompañamiento",
+      "description": "Para familias que quieren el mayor nivel de seguimiento y atención personalizada en cada paso del proceso.",
+      "features": [
+        "Evaluación completa inicial",
+        "Plan personalizado mensual",
+        "Seguimiento diario por mensajería",
+        "Revisiones semanales por videollamada",
+        "Acceso prioritario a sesiones en vivo",
+        "Biblioteca de vídeos de ejercicios",
+        "Informes de progreso mensuales"
+      ],
+      "highlighted": true,
+      "badge": "⭐ Más completo",
+      "whatsapp_number": "XXXXXXXXXXX",
+      "cta_text": "Consultar por WhatsApp"
+    },
+    {
+      "name": "Supervisado",
+      "tagline": "Equilibrio ideal",
+      "description": "El plan más elegido. Evaluación, programa personalizado y revisión semanal por videollamada.",
+      "features": [
+        "Evaluación completa inicial",
+        "Plan personalizado mensual",
+        "Revisión semanal por videollamada",
+        "Soporte por mensajería",
+        "Biblioteca de vídeos de ejercicios"
+      ],
+      "highlighted": false,
+      "badge": "👍 Más popular",
+      "whatsapp_number": "XXXXXXXXXXX",
+      "cta_text": "Consultar por WhatsApp"
+    },
+    {
+      "name": "8 Semanas",
+      "tagline": "Programa intensivo",
+      "description": "Programa estructurado de 8 semanas. Ideal para empezar con una base sólida y ver resultados rápido.",
+      "features": [
+        "Evaluación inicial completa",
+        "Plan estructurado de 8 semanas",
+        "Revisión a mitad de programa (semana 4)",
+        "Evaluación final de cierre",
+        "Biblioteca de vídeos de ejercicios"
+      ],
+      "highlighted": false,
+      "badge": "",
+      "whatsapp_number": "XXXXXXXXXXX",
+      "cta_text": "Consultar por WhatsApp"
+    },
+    {
+      "name": "Mantenimiento",
+      "tagline": "Para seguir progresando",
+      "description": "Para familias que ya completaron un programa y quieren continuar con apoyo mensual.",
+      "features": [
+        "Reevaluación mensual",
+        "Actualización del plan de ejercicios",
+        "Revisión mensual por videollamada",
+        "Soporte por mensajería"
+      ],
+      "highlighted": false,
+      "badge": "",
+      "whatsapp_number": "XXXXXXXXXXX",
+      "cta_text": "Consultar por WhatsApp"
+    }
+  ]
+}

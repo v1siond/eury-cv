@@ -1,0 +1,27 @@
+{
+  "section_tag": "El proceso",
+  "title": "Cómo funciona",
+  "subtitle": "Un proceso estructurado y medible, diseñado para adaptarse a cada caso y lograr resultados reales.",
+  "steps": [
+    {
+      "number": "01",
+      "title": "Evaluación",
+      "description": "Entrevista inicial + vídeo de movimiento. Identificamos los reflejos activos y su impacto en el desarrollo."
+    },
+    {
+      "number": "02",
+      "title": "Plan personalizado",
+      "description": "Diseño de un programa específico con ejercicios diarios de 10–20 minutos adaptados a la edad y necesidades."
+    },
+    {
+      "number": "03",
+      "title": "Seguimiento",
+      "description": "Revisión de progreso, ajuste de ejercicios y soporte continuo vía mensajería o videollamada semanal."
+    },
+    {
+      "number": "04",
+      "title": "Reevaluación",
+      "description": "Medimos el avance, celebramos los logros y actualizamos el plan para el siguiente mes."
+    }
+  ]
+}

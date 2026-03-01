@@ -1,0 +1,32 @@
+{
+  "section_tag": "¿Para quién es?",
+  "title": "Pensado para cada etapa",
+  "subtitle": "El programa se adapta tanto a niños en pleno desarrollo como a adultos que buscan optimizar su bienestar neurológico.",
+  "ninos": {
+    "title": "Para niños",
+    "age_range": "De 3 a 16 años",
+    "intro": "Si tu hijo presenta alguna de estas situaciones, los reflejos primitivos retenidos podrían estar influyendo:",
+    "items": [
+      "Dificultades en el aprendizaje (lectura, escritura, matemáticas)",
+      "Déficit de atención o hiperactividad (TDAH)",
+      "Problemas de coordinación y equilibrio",
+      "Torpeza motora o dificultad con el deporte",
+      "Retraso en el habla o lenguaje",
+      "Hipersensibilidad sensorial",
+      "Dislexia, disgrafía o discalculia"
+    ]
+  },
+  "adultos": {
+    "title": "Para adultos",
+    "age_range": "Sin límite de edad",
+    "intro": "Los reflejos primitivos también afectan en la edad adulta. El programa de evaluación funcional te ayuda con:",
+    "items": [
+      "Tensión crónica o dolor postural",
+      "Dificultades de concentración o estrés sostenido",
+      "Recuperación funcional tras lesiones",
+      "Optimización del rendimiento deportivo o laboral",
+      "Búsqueda de bienestar neurológico general"
+    ],
+    "note": "💡 La evaluación funcional para adultos identifica patrones de movimiento compensatorios y diseña un plan de integración adaptado."
+  }
+}

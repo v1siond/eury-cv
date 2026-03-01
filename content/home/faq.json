@@ -1,0 +1,27 @@
+{
+  "section_tag": "Preguntas frecuentes",
+  "title": "Resolvemos tus dudas",
+  "subtitle": "Si tienes alguna pregunta que no está aquí, escríbeme directamente por WhatsApp.",
+  "items": [
+    {
+      "question": "¿Qué son los reflejos primitivos retenidos?",
+      "answer": "Son reflejos automáticos presentes desde el nacimiento que deberían integrarse (desaparecer) en los primeros años de vida. Cuando persisten más allá de la infancia, interfieren con el aprendizaje, la atención, la coordinación y el comportamiento. Su integración mediante ejercicios específicos puede mejorar significativamente el desarrollo neurológico."
+    },
+    {
+      "question": "¿A partir de qué edad se puede hacer el programa?",
+      "answer": "El programa para niños está diseñado para edades de 3 a 16 años, aunque podemos valorar casos específicos fuera de ese rango. Para adultos no existe límite de edad; los patrones de movimiento pueden trabajarse en cualquier etapa de la vida."
+    },
+    {
+      "question": "¿Cuánto tiempo tarda en verse resultados?",
+      "answer": "La mayoría de las familias reportan cambios notables entre la 4.ª y la 8.ª semana: mejoras en la concentración, el sueño, la coordinación y el comportamiento en clase. La integración completa es un proceso gradual que depende de cada caso y de la constancia con los ejercicios diarios."
+    },
+    {
+      "question": "¿Necesitamos material especial para los ejercicios?",
+      "answer": "No. Los ejercicios se realizan en casa con una esterilla y el suelo. No se necesita ningún equipo especial ni aparatos. El programa está diseñado para ser accesible y fácil de integrar en la rutina diaria del hogar."
+    },
+    {
+      "question": "¿Las sesiones son en directo o grabadas?",
+      "answer": "El programa combina ambas modalidades: los ejercicios diarios se realizan con vídeos grabados que puedes hacer a vuestro ritmo en casa, y las sesiones de seguimiento y reevaluación son en directo por videollamada, para que pueda observar el movimiento y hacer los ajustes necesarios."
+    }
+  ]
+}

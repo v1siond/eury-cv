@@ -1,0 +1,21 @@
+{
+  "title": "Privacidad y consentimiento",
+  "subtitle": "Tu confianza y la seguridad de tu familia son nuestra prioridad.",
+  "policies": [
+    {
+      "icon": "🔒",
+      "title": "Privacidad",
+      "body": "Los datos personales se usan exclusivamente para la prestación del servicio y no se comparten con terceros bajo ningún concepto. Cumplimos con el RGPD."
+    },
+    {
+      "icon": "📝",
+      "title": "Consentimiento informado",
+      "body": "Al iniciar el programa se firma un consentimiento informado digital que explica el alcance del servicio, la metodología y las condiciones."
+    },
+    {
+      "icon": "🤫",
+      "title": "Confidencialidad",
+      "body": "Toda la información clínica, vídeos y datos del usuario son estrictamente confidenciales y se tratan con absoluta discreción profesional."
+    }
+  ]
+}
